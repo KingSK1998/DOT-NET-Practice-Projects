@@ -1,0 +1,25 @@
+﻿@model MVC5ModelDemo.Models.Product
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Product Page</h3>
+<table border="1" class="table table-bordered table-responsive">
+    <thead>
+        <tr class="btn-primary">
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Order ID</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.ProductId</td>
+            <td>@Model.ProductName</td>
+            <td>@Model.OrderId</td>
+            <td>@Model.Quantity</td>
+        </tr>
+    </tbody>
+</table>
